@@ -1,0 +1,50 @@
+$max-width-desktop: 75vw;
+$max-width-mobile: 90vw;
+
+$header-height-desktop: 12.5vh;
+$header-height-mobile: 8vh;
+
+$gutter-desktop: 22px;
+$gutter-mobile: 16px;
+
+$finger-size: 42px;
+$border-radius-button: 30px;
+
+//colors
+$dark-blue: #252b42;
+$overlay-blue: #c7c9d4;
+$gray: #737373;
+$light-gray: #bdbdbd;
+$orange: #fa4a0c;
+$hamburger-color: #737373;
+$navigation-background: #fff;
+
+//Font Sizes
+/*
+$font-normal: 1rem;
+$font-md: 1.25rem;
+$font-lg: 1.5rem;
+$font-xlg: 2.25rem;
+$font-xxlg: 2.5rem;
+$font-xxxlg: 3.625rem;
+*/
+
+$font-m-verysmall: 1rem;
+$font-d-verysmall: 1.3vw;
+
+$font-m-small: 1.5rem;
+$font-d-small: 1.2vw;
+
+$font-m-normal: 2.25rem;
+$font-d-normal: 2.5vw;
+
+$font-m-big: 3rem;
+$font-d-big: 3vw;
+
+$font-m-verybig: 3.5rem;
+$font-d-verybig: 4vw;
+
+//duration
+$overlay-duraton: 380ms;
+$hamburger-duration: 280ms;
+$navigation-transition: 300ms;

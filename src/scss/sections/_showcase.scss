@@ -1,0 +1,124 @@
+.main {
+  margin-top: 50px;
+  text-align: center;
+  @include breakpoint-up(medium) {
+    position: relative;
+    background-image: url("../../img/main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 48.375rem;
+    margin-top: 0;
+  }
+  &-box {
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint-up(medium) {
+    }
+    @include breakpoint-up(xlarge) {
+      width: 60%;
+    }
+    @include breakpoint-up(xxlarge) {
+    }
+    h1 {
+      font-size: $font-m-verysmall;
+      @include breakpoint-up(medium) {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+    h2 {
+      font-size: $font-m-normal;
+      margin-top: 17px;
+      margin-bottom: 17px;
+      padding-left: 16px;
+      padding-right: 16px;
+      @include breakpoint-up(medium) {
+        color: #fff;
+        font-size: 3.625rem;
+      }
+    }
+
+    p {
+      font-size: $font-m-small;
+      padding-left: 34px;
+      padding-right: 34px;
+      @include breakpoint-up(medium) {
+        color: #f6f6f6;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &-download-buttons-box {
+    margin-top: 40px;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: center;
+    }
+    button {
+      &:nth-child(1) {
+      }
+      &:nth-child(2) {
+        @include breakpoint-up(medium) {
+          background-color: transparent;
+          color: #fff;
+          border-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.phones-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint-up(medium) {
+    position: relative;
+    margin-top: -280px;
+    z-index: 3;
+    min-width: 600px;
+  }
+  @include breakpoint-up(xlarge) {
+    margin-top: -340px;
+  }
+  @include breakpoint-up(xxlarge) {
+    margin-top: -350px;
+  }
+  img {
+  }
+}
+
+//other
+.desktop-line {
+  display: none;
+  @include breakpoint-up(medium) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 72px;
+  }
+}
+
+.how-the-app-works-title {
+  color: $dark-blue;
+  border-bottom: 3px solid #e4e4e4;
+  padding-bottom: 49px;
+  text-align: center;
+  font-size: $font-m-small;
+  @include breakpoint-up(medium) {
+    font-size: $font-d-small;
+    border-bottom: 0px;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,145 @@
+.app-section {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 65px;
+  text-align: center;
+  @include breakpoint-up(medium) {
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 0;
+  }
+  @include breakpoint-up(xxlarge) {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  &-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 60px;
+    }
+    @include breakpoint-up(xxlarge) {
+      gap: 10px;
+    }
+    &-texts {
+      @include breakpoint-up(medium) {
+        text-align: left;
+      }
+      @include breakpoint-up(xxlarge) {
+        width: 50%;
+      }
+      h3 {
+      }
+      h4 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include breakpoint-up(xxlarge) {
+          width: 80%;
+        }
+      }
+      p {
+        @include breakpoint-up(xxlarge) {
+          width: 75%;
+        }
+      }
+    }
+    &-image {
+      @include breakpoint-up(medium) {
+        order: -1;
+      }
+      img {
+      }
+    }
+  }
+
+  &-explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 60px;
+    }
+    @include breakpoint-up(xxlarge) {
+      gap: 10px;
+    }
+    &-texts {
+      @include breakpoint-up(medium) {
+        text-align: left;
+      }
+      @include breakpoint-up(xxlarge) {
+        width: 50%;
+      }
+      h3 {
+      }
+      h4 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include breakpoint-up(xxlarge) {
+          width: 80%;
+        }
+      }
+      p {
+        @include breakpoint-up(xxlarge) {
+          width: 75%;
+        }
+      }
+    }
+    &-image {
+      @include breakpoint-up(medium) {
+      }
+      img {
+      }
+    }
+  }
+
+  &-checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 60px;
+    }
+    @include breakpoint-up(xxlarge) {
+      gap: 10px;
+    }
+    &-texts {
+      @include breakpoint-up(medium) {
+        text-align: left;
+      }
+      @include breakpoint-up(xxlarge) {
+        width: 50%;
+      }
+      h3 {
+      }
+      h4 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include breakpoint-up(xxlarge) {
+          width: 80%;
+        }
+      }
+      p {
+        @include breakpoint-up(xxlarge) {
+          width: 75%;
+        }
+      }
+    }
+    &-image {
+      @include breakpoint-up(medium) {
+        order: -1;
+      }
+      img {
+      }
+    }
+  }
+}

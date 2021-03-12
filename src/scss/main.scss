@@ -1,0 +1,21 @@
+/*reset*/
+@import "./helpers/_reset.scss";
+
+/*variable*/
+@import "./helpers/_variable.scss";
+
+/*mixins*/
+@import "./helpers/mixins.scss";
+
+/*animation*/
+@import "./helpers/animations";
+
+/*global*/
+@import "./helpers/_global.scss";
+
+/*sections*/
+@import "./sections/_header.scss";
+@import "./sections/_showcase.scss";
+@import "./sections/section-center.scss";
+@import "./sections/_download.scss";
+@import "./sections/_footer.scss";

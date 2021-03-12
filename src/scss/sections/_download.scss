@@ -1,0 +1,76 @@
+.download-app-section {
+  background-color: $dark-blue;
+  min-height: 35.25rem;
+  text-align: center;
+  @include breakpoint-up(medium) {
+    position: relative;
+    background-image: url("../../img/download-app-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    //min-height: 48.375rem;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint-up(medium) {
+      max-width: 1040px;
+    }
+    &-texts {
+      margin-left: 60px;
+      margin-right: 60px;
+      h4 {
+        color: #fff;
+      }
+      p {
+        margin-top: 10px;
+        margin-bottom: 60px;
+        color: $light-gray;
+        @include breakpoint-up(medium) {
+          color: #fff;
+        }
+      }
+      &-mobile-text {
+        display: block;
+        @include breakpoint-up(medium) {
+          display: none;
+        }
+      }
+      &-desktop-text {
+        display: none;
+        @include breakpoint-up(medium) {
+          display: block;
+        }
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      button {
+        font-weight: bold;
+        &:nth-child(1) {
+          background-color: $orange;
+          color: #fff;
+          border: 1px solid $orange;
+          border-radius: 10px;
+          padding: 18px 31px;
+        }
+        &:nth-child(2) {
+          background-color: transparent;
+          border: 1px solid #fff;
+          border-radius: 10px;
+          color: #fff;
+          padding: 16px 45px;
+        }
+      }
+    }
+  }
+}

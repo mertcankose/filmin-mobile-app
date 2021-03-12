@@ -1,0 +1,25 @@
+.footer {
+  height: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+  }
+  &-logo {
+    display: none;
+    @include breakpoint-up(medium) {
+      display: block;
+    }
+  }
+  &-social {
+    display: flex;
+    gap: 24px;
+  }
+  &-copyright {
+    font-size: 12px;
+    @include breakpoint-up(medium) {
+    }
+  }
+}
