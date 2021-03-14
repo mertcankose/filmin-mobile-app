@@ -114,6 +114,31 @@ p {
     height: 30px;
   }
 }
+.apple-store {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  //border: 1px solid #fff;
+  box-shadow: 2px 1px 8px #fff;
+  @include breakpoint-up(medium) {
+    //border: 0px;
+  }
+  p {
+    line-height: 1.1rem;
+    color: #fff;
+    &:nth-child(1) {
+      font-size: 0.6rem;
+      font-weight: 500;
+    }
+    &:nth-child(2) {
+      font-size: 1.05rem;
+    }
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
 .huawei-store {
   background-color: #fff;
   color: #000;
@@ -123,6 +148,7 @@ p {
   @include breakpoint-up(medium) {
   }
   p {
+    color: #000;
     line-height: 1.1rem;
     &:nth-child(1) {
       font-size: 0.6rem;

@@ -1,5 +1,5 @@
 .main {
-  margin-top: 5px;
+  margin-top: 30px;
   text-align: center;
   position: relative;
   scroll-margin-top: calc(#{$header-height-mobile} + 60px);
@@ -71,12 +71,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
     @include breakpoint-up(medium) {
       gap: 32px;
       flex-direction: row;
       justify-content: center;
     }
+    /*
     a {
       &:nth-child(1) {
         p {
@@ -91,6 +92,7 @@
         }
       }
     }
+    */
   }
 }
 

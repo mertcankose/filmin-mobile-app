@@ -1,11 +1,12 @@
 .download-app-section {
   background-color: $dark-blue;
-  min-height: 32.25rem;
+  min-height: 28.25rem;
   text-align: center;
   margin-top: 50px;
   position: relative;
   scroll-margin-top: 120px;
   @include breakpoint-up(medium) {
+    min-height: 32.25rem;
     &::before {
       content: "";
       position: absolute;
@@ -69,14 +70,7 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
-      a {
-        &:nth-child(2) {
-          p {
-            color: #000;
-          }
-        }
-      }
+      gap: 24px;
       @include breakpoint-up(medium) {
         flex-direction: row;
       }
