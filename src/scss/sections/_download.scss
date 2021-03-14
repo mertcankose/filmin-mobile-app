@@ -1,16 +1,29 @@
 .download-app-section {
   background-color: $dark-blue;
-  min-height: 35.25rem;
+  min-height: 32.25rem;
   text-align: center;
+  margin-top: 50px;
+  position: relative;
+  scroll-margin-top: 120px;
   @include breakpoint-up(medium) {
-    position: relative;
-    background-image: url("../../img/download-app-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../../img/fiminn-background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      opacity: 0.45;
+    }
+
     //min-height: 48.375rem;
   }
   &-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,29 +35,31 @@
       max-width: 1040px;
     }
     &-texts {
-      margin-left: 60px;
-      margin-right: 60px;
+      margin-left: 20px;
+      margin-right: 20px;
       h4 {
         color: #fff;
       }
       p {
         margin-top: 10px;
         margin-bottom: 60px;
-        color: $light-gray;
         @include breakpoint-up(medium) {
-          color: #fff;
         }
       }
       &-mobile-text {
         display: block;
+        color: $light-gray;
         @include breakpoint-up(medium) {
           display: none;
+          color: #fff;
         }
       }
       &-desktop-text {
         display: none;
+        color: $light-gray;
         @include breakpoint-up(medium) {
           display: block;
+          color: #fff;
         }
       }
     }
@@ -52,24 +67,18 @@
     &-buttons {
       display: flex;
       justify-content: center;
+      flex-direction: column;
       align-items: center;
       gap: 16px;
-      button {
-        font-weight: bold;
-        &:nth-child(1) {
-          background-color: $orange;
-          color: #fff;
-          border: 1px solid $orange;
-          border-radius: 10px;
-          padding: 18px 31px;
-        }
+      a {
         &:nth-child(2) {
-          background-color: transparent;
-          border: 1px solid #fff;
-          border-radius: 10px;
-          color: #fff;
-          padding: 16px 45px;
+          p {
+            color: #000;
+          }
         }
+      }
+      @include breakpoint-up(medium) {
+        flex-direction: row;
       }
     }
   }

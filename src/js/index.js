@@ -1,6 +1,7 @@
 const headerSwitch = document.querySelector(".header-switch");
 const headerNavigation = document.querySelector(".header-nav");
 const headerOverlay = document.querySelector(".header-overlay");
+const header = document.querySelector(".header");
 const body = document.body;
 
 headerSwitch.addEventListener("click", (e) => {
@@ -32,4 +33,3 @@ document.documentElement.addEventListener("click", () => {
   headerOverlay.classList.add("fade-out");
   headerOverlay.classList.remove("fade-in");
 });
-

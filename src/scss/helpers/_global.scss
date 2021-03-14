@@ -12,7 +12,6 @@ body {
 h1 {
   color: $gray;
   font-weight: bold;
-  line-height: 3rem;
   @include breakpoint-up(medium) {
     line-height: 5rem;
   }
@@ -25,68 +24,116 @@ h2 {
 }
 
 h3 {
-  color: $orange;
+  color: $light-blue;
   font-weight: bold;
   font-size: $font-m-small;
   @include breakpoint-up(medium) {
     font-size: $font-d-normal;
   }
-  @include breakpoint-up(xxlarge) {
-    font-size: $font-d-small;
+  @include breakpoint-up(xlarge) {
+    line-height: 3rem;
+    font-size: $font-d-normal;
   }
-  //line-height: 3.5625rem;
+  @include breakpoint-up(xxlarge) {
+    font-size: $font-d-big;
+  }
 }
 
 h4 {
-  color: $dark-blue;
+  color: $white;
   font-weight: bold;
   font-size: $font-m-normal;
   @include breakpoint-up(medium) {
-    font-size: $font-d-big;
-  }
-  @include breakpoint-up(xxlarge) {
     font-size: $font-d-normal;
   }
-  //line-height: 3.5625rem;
+  @include breakpoint-up(xlarge) {
+    line-height: 3rem;
+    font-size: $font-d-normal;
+  }
+  @include breakpoint-up(xxlarge) {
+    font-size: $font-d-big;
+  }
 }
 
 p {
-  color: $gray;
+  color: #f6f6f6;
   font-size: $font-m-small;
+  line-height: 1.5rem;
   @include breakpoint-up(medium) {
     font-size: $font-d-normal;
   }
-  @include breakpoint-up(xxlarge) {
-    font-size: $font-d-small;
+  @include breakpoint-up(xlarge) {
+    line-height: 2.9rem;
+    //font-size: $font-d-small;
   }
-  //line-height: 2.375rem;
+  @include breakpoint-up(xxlarge) {
+    font-size: $font-d-big;
+  }
 }
 
 //download buttons
+
 .download-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  width: 14.875rem;
-  height: 4.25rem;
+  justify-content: space-evenly;
+  width: 11rem;
+  height: 3.3rem;
   border-radius: $border-radius-button;
   font-weight: bold;
-  line-height: 36px;
+  line-height: 1rem;
   font-size: 1.7145rem;
   text-align: center;
   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.07);
-  border: 1px solid $orange;
   cursor: pointer;
   &:hover {
     opacity: 0.8;
   }
 }
 .play-store {
-  background-color: $orange;
+  background-color: #000;
   color: #fff;
-  padding: 16px 58.5px;
+  text-align: left;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 2px #fff;
+  @include breakpoint-up(medium) {
+    border: 0px;
+  }
+  p {
+    line-height: 1.1rem;
+    &:nth-child(1) {
+      font-size: 0.6rem;
+      font-weight: 500;
+    }
+    &:nth-child(2) {
+      font-size: 1.05rem;
+    }
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
-.app-store {
+.huawei-store {
   background-color: #fff;
-  color: $orange;
-  padding: 16px 56.5px;
+  color: #000;
+  text-align: left;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 2px #fff;
+  @include breakpoint-up(medium) {
+  }
+  p {
+    line-height: 1.1rem;
+    &:nth-child(1) {
+      font-size: 0.6rem;
+      font-weight: 500;
+    }
+    &:nth-child(2) {
+      font-size: 1.05rem;
+    }
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }

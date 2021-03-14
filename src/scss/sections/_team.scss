@@ -1,0 +1,74 @@
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  scroll-margin-top: 100px;
+  color: #fff;
+  @include breakpoint-up(medium) {
+    scroll-margin-top: 180px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 60px;
+    @include breakpoint-up(medium) {
+      margin-bottom: 120px;
+    }
+  }
+
+  &-team-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      gap: 80px;
+    }
+    .person-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(31, 31, 31);
+      padding: 40px 60px;
+      border-radius: 10px;
+      position: relative;
+      height: 260px;
+      margin-top: 50px;
+      @include breakpoint-up(medium) {
+        margin-top: 0;
+      }
+    }
+    &-person-image {
+      width: 120px;
+      border-radius: 50%;
+      position: absolute;
+      top: -48px;
+    }
+    &-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding-top: 60px;
+    }
+    &-title {
+      color: #cacaca;
+      font-size: 0.9rem;
+      margin-top: 12px;
+    }
+    &-social {
+      display: flex;
+      gap: 30px;
+      margin-top: 40px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

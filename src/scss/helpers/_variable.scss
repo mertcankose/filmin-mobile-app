@@ -1,23 +1,25 @@
 $max-width-desktop: 75vw;
 $max-width-mobile: 90vw;
 
-$header-height-desktop: 12.5vh;
+$header-height-desktop: 11vh;
 $header-height-mobile: 8vh;
 
 $gutter-desktop: 22px;
 $gutter-mobile: 16px;
 
-$finger-size: 42px;
-$border-radius-button: 30px;
+$finger-size: 46px;
+$border-radius-button: 8px;
 
 //colors
-$dark-blue: #252b42;
+$dark-blue: #030924;
+$light-blue: #0000ff;
+$white: #fff;
 $overlay-blue: #c7c9d4;
 $gray: #737373;
 $light-gray: #bdbdbd;
 $orange: #fa4a0c;
-$hamburger-color: #737373;
-$navigation-background: #fff;
+$hamburger-color: #fff;
+$navigation-background: #000;
 
 //Font Sizes
 /*
@@ -32,14 +34,17 @@ $font-xxxlg: 3.625rem;
 $font-m-verysmall: 1rem;
 $font-d-verysmall: 1.3vw;
 
-$font-m-small: 1.5rem;
-$font-d-small: 1.2vw;
+$font-m-small: 1.1rem;
+$font-d-small: 1.3vw;
 
-$font-m-normal: 2.25rem;
-$font-d-normal: 2.5vw;
+$font-m-medium: 1.6rem;
+$font-d-medium: 1.8vw;
 
-$font-m-big: 3rem;
-$font-d-big: 3vw;
+$font-m-normal: 1.8rem;
+$font-d-normal: 1.5vw;
+
+$font-m-big: 1.3rem;
+$font-d-big: 1.5vw;
 
 $font-m-verybig: 3.5rem;
 $font-d-verybig: 4vw;

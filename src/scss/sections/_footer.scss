@@ -8,9 +8,14 @@
     flex-direction: row;
   }
   &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: none;
+
     @include breakpoint-up(medium) {
       display: block;
+      height: 120px;
     }
   }
   &-social {

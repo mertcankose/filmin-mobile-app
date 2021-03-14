@@ -1,29 +1,43 @@
 .main {
-  margin-top: 50px;
+  margin-top: 5px;
   text-align: center;
+  position: relative;
+  scroll-margin-top: calc(#{$header-height-mobile} + 60px);
   @include breakpoint-up(medium) {
-    position: relative;
-    background-image: url("../../img/main-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 48.375rem;
+    min-height: 44.375rem;
     margin-top: 0;
+    scroll-margin-top: calc(#{$header-height-desktop} + 110px);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      bottom: 0px;
+      background-image: url("../../img/fiminn-background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: top center;
+      opacity: 0.52;
+    }
   }
   &-box {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     @include breakpoint-up(medium) {
     }
     @include breakpoint-up(xlarge) {
-      width: 60%;
+      //width: 70%;
     }
     @include breakpoint-up(xxlarge) {
     }
     h1 {
       font-size: $font-m-verysmall;
+      color: #fff;
+      font-size: 1.3rem;
       @include breakpoint-up(medium) {
-        color: #fff;
         font-size: 1.5rem;
       }
     }
@@ -33,41 +47,47 @@
       margin-bottom: 17px;
       padding-left: 16px;
       padding-right: 16px;
+      color: #fff;
       @include breakpoint-up(medium) {
-        color: #fff;
         font-size: 3.625rem;
       }
     }
 
     p {
       font-size: $font-m-small;
-      padding-left: 34px;
-      padding-right: 34px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #b9b8b8;
       @include breakpoint-up(medium) {
-        color: #f6f6f6;
         font-size: 1.5rem;
+        color: #f6f6f6;
       }
     }
   }
   &-download-buttons-box {
-    margin-top: 40px;
-    margin-bottom: 22px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 17px;
+    gap: 16px;
     @include breakpoint-up(medium) {
+      gap: 32px;
       flex-direction: row;
       justify-content: center;
     }
-    button {
+    a {
       &:nth-child(1) {
+        p {
+          color: #fff;
+        }
       }
       &:nth-child(2) {
+        p {
+          color: #000;
+        }
         @include breakpoint-up(medium) {
-          background-color: transparent;
-          color: #fff;
-          border-color: #fff;
         }
       }
     }
@@ -78,20 +98,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: auto;
   margin-right: auto;
+  //width: 409px;
+  //height: 502px;
   @include breakpoint-up(medium) {
     position: relative;
     margin-top: -280px;
     z-index: 3;
     min-width: 600px;
   }
+  @include breakpoint-up(large) {
+    margin-top: -320px;
+  }
   @include breakpoint-up(xlarge) {
-    margin-top: -340px;
+    margin-top: -360px;
   }
   @include breakpoint-up(xxlarge) {
-    margin-top: -350px;
+    margin-top: -380px;
   }
   img {
   }
@@ -104,21 +128,26 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
     border: 1px solid #e4e4e4;
     margin-bottom: 72px;
   }
 }
 
 .how-the-app-works-title {
-  color: $dark-blue;
+  color: $white;
   border-bottom: 3px solid #e4e4e4;
   padding-bottom: 49px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
   font-size: $font-m-small;
+  margin-bottom: 10px;
   @include breakpoint-up(medium) {
-    font-size: $font-d-small;
+    //font-size: $font-d-small;
+    font-size: 1.8rem;
     border-bottom: 0px;
     padding-bottom: 0;
+    margin-bottom: 60px;
   }
 }
